@@ -1,13 +1,35 @@
-import { Button } from '@/components/ui/button'
-import React from 'react'
+import CompanionCard from '@/components/CompanionCard';
 
 const Page = () => {
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <h1>Welcome to my LMS SASS App</h1>
-      <Button>Click Me</Button>
-    </div>
-  );
-}
+    <main className='flex flex-col justify-center items-center'>
+      <h1>Popular Companions</h1>
 
-export default Page
+      <section className='home-section'>
+        <CompanionCard
+          name='Neura the Brainy Explorer'
+          topic='Neural Network of the Brain'
+          subject='Science'
+          duration={45}
+          color='#fsdgdse'
+        />
+        <CompanionCard
+          name='Neura the Brainy Explorer'
+          topic='Neural Network of the Brain'
+          subject='Science'
+          duration={45}
+          color='#fsdgdse'
+        />
+        <CompanionCard
+          name='Neura the Brainy Explorer'
+          topic='Neural Network of the Brain'
+          subject='Science'
+          duration={45}
+          color='#fsdgdse'
+        />
+      </section>
+    </main>
+  );
+};
+
+export default Page;
